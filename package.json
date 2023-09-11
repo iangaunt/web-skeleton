@@ -4,7 +4,8 @@
     "description": "A basic skeleton for creating websites with a Sass-TypeScript toolchain.",
     "main": "index.js",
     "scripts": {
-        "lint": "echo \"Error: no test specified\" && exit 1"
+        "lint": "npx eslint .",
+        "tsc": "tsc --watch"
     },
     "author": "Ian Gaunt",
     "license": "MIT",
