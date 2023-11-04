@@ -1,5 +1,7 @@
 {
     "compilerOptions": {
+        "esModuleInterop": true,
+        "jsx": "react",
         "module": "commonjs",
         "target": "ES5",
         "outDir": "./src/scripts/js",
