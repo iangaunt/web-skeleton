@@ -16,10 +16,18 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: radial-gradient(circle, rgb(30, 0, 42) 0%, rgb(0, 1, 3) 100%);
+  background: radial-gradient(circle, rgb(30, 39, 80) 0%, rgb(0, 1, 3) 100%);
   flex-direction: column;
   height: 100vh;
   width: 100vw;
+}
+header .logo {
+  position: relative;
+  transition: color 0.1s, transform 0.2s;
+}
+header .logo:hover {
+  color: rgb(51, 204, 255);
+  transform: rotateZ(60deg);
 }
 header h1 {
   color: white;

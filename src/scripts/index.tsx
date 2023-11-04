@@ -2,7 +2,6 @@ import "../css/style.css";
 
 import React from "react";
 import { createRoot } from "react-dom/client";
-
 import { Icon } from '@iconify/react';
 
 function Header() {
@@ -15,3 +14,8 @@ function Header() {
 }
 
 createRoot(document.getElementById("header")).render(Header());
+
+function hello() {
+    return "Hello!";
+}
+console.log(hello());
