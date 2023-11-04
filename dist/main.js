@@ -35462,6 +35462,10 @@ function Header() {
             ".")));
 }
 (0, client_1.createRoot)(document.getElementById("header")).render(Header());
+function hello() {
+    return "Hello!";
+}
+console.log(hello());
 
 
 /***/ })

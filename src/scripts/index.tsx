@@ -14,3 +14,8 @@ function Header() {
 }
 
 createRoot(document.getElementById("header")).render(Header());
+
+function hello() {
+    return "Hello!";
+}
+console.log(hello());
