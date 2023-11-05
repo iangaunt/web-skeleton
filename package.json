@@ -9,7 +9,8 @@
         "tsc": "tsc --watch",
         
         "build": "npx webpack",
-        "start": "webpack serve --port 3000"
+        "start": "webpack serve --port 3000",
+        "deploy": "npm run build && gh-pages -d dist"
     },
     "author": "Ian Gaunt",
     "license": "MIT",
