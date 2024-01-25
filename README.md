@@ -8,7 +8,7 @@ A very basic webpage backbone in order to create a simple website using a Sass-T
 
 ## Building & Running
 
-`build` will run the Webpack library on your current web skeleton and build your website into the `dist` folder, and `start` will host the build on your local machine. Once you have committed to Git in your terminal, you can use the `gh` command to push the distribution folder to a new branch called `gh-pages`. This name can be modified in the `package.json` file.`
+`build` will run the Webpack library on your current web skeleton and build your website into the `dist` folder, and `start` will host the build on your local machine. Once you have committed to Git in your terminal, you can use the `gh` command to push the distribution folder to a new branch called `gh-pages`. This name can be modified in the `package.json` file.
 
 ## Cloning
 
