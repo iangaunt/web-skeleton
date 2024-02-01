@@ -7,10 +7,8 @@
         "lint-scss": "npx stylelint \"**/*.scss\"",
         "lint-tsc": "npx eslint .",
         "tsc": "tsc --watch",
-        
         "build": "npx webpack",
         "start": "webpack serve --port 3000",
-
         "gh": "git subtree push --prefix dist origin gh-pages"
     },
     "author": "Ian Gaunt",
@@ -35,7 +33,8 @@
     "dependencies": {
         "@types/react": "^18.2.34",
         "@types/react-dom": "^18.2.14",
-        "react": "^18.2.0",
-        "react-dom": "^18.2.0"
+        "preact": "^10.19.3",
+        "react": "npm:@preact/compat",
+        "react-dom": "npm:@preact/compat"
     }
 }

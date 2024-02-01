@@ -4,7 +4,14 @@
         "jsx": "react",
         "module": "commonjs",
         "target": "ES5",
-        "outDir": "./src/scripts/js",
-        "rootDir": "src"
+        "outDir": "./dist",
+        "rootDir": "src",
+
+        "skipLibCheck": true,
+        "baseUrl": "./",
+        "paths": {
+            "react": ["./node_modules/preact/compat/"],
+            "react-dom": ["./node_modules/preact/compat/"]
+        }
     }
 }
