@@ -163,14 +163,31 @@ var preact_1 = __webpack_require__(/*! preact */ "./node_modules/preact/dist/pre
 var Header = /** @class */ (function (_super) {
     __extends(Header, _super);
     function Header() {
-        return _super !== null && _super.apply(this, arguments) || this;
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.state = { time: Date.now() };
+        _this.timer = null;
+        return _this;
     }
+    Header.prototype.componentDidMount = function () {
+        var _this = this;
+        this.timer = setInterval(function () {
+            _this.setState({ time: Date.now() });
+        }, 1000);
+    };
+    Header.prototype.componentWillUnmount = function () {
+        clearInterval(this.timer);
+    };
     Header.prototype.render = function () {
+        var time = new Date(this.state.time).toLocaleTimeString();
         return (react_1.default.createElement("header", null,
-            react_1.default.createElement("h1", null, "Ian's cool Skeleton"),
+            react_1.default.createElement("h1", null, "Ian's Preact Skeleton"),
             react_1.default.createElement("h2", null,
                 "Feel free to begin editing ",
                 react_1.default.createElement("span", null, "index.tsx"),
+                "."),
+            react_1.default.createElement("p", null,
+                "The current time is ",
+                react_1.default.createElement("span", null, time),
                 ".")));
     };
     return Header;
