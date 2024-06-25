@@ -2,20 +2,15 @@ import "../css/style.css";
 
 import React from "react";
 import { createRoot } from "react-dom/client";
-import { Icon } from '@iconify/react';
 
-function Header() {
+function App() {
     return (
-        <header>
-            <h1>Ian's <Icon className="logo" icon="cib:react" width="100px" height="100px" /> Skeleton</h1>
+        <div className="container">
+            <h1>Ian's React Skeleton</h1>
             <h2>Feel free to begin editing <span>index.tsx</span>.</h2>
-        </header>
+        </div>
     )
 }
 
-createRoot(document.getElementById("header")).render(Header());
-
-function hello() {
-    return "Hello!";
-}
-console.log(hello());
+let root = createRoot(document.getElementById("main"));
+root.render(<App />)
